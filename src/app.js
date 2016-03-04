@@ -1,12 +1,15 @@
 'use strict';
 
 var express = require('express');
+
 var router = require('./api');
 
 var app = express();
 
-app.use('/', express.static('public'));
+require('./database');
+require('./seed');
 
+app.use('/', express.static('public'));
 
 app.use('/api', router);
 
