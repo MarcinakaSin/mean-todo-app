@@ -10,7 +10,7 @@ var mongoose = require('mongoose');
 	}
 });*/
 
-mongoose.connect('mongodb://' + process.env.DB_USER + ':' + process.env.DB_ACCOUNT + '@ds011399.mlab.com:11399/heroku_gpnhf9gl', function(err) {
+mongoose.connect(process.env.MONGOLAB_URI, function(err) {
 	if(err) {
 		console.log('Failed connecting to Mongodb!');
 	} else {
