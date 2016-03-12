@@ -6,15 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcinakasin/mean-todo.git"
+  },
   "author": "Marcin Ufniarz",
+  "homepage": "https://github.com/marcinakasin/mean-todo#readme",
   "dependencies": {
     "angular": "^1.5.0",
     "body-parser": "1.15.0",
     "css-loader": "0.23.1",
     "mongoose": "4.4.6",
     "style-loader": "0.13.0",
-    "webpack": "1.12.14",
     "express": "4.13.1"
+  },
+  "devDependencies": {
+    "webpack": "1.12.14"
   },
   "license": "ISC"
 }
