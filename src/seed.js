@@ -2,11 +2,7 @@
 
 var Todo = require('./models/todo');
 
-var todos = [
-	'Feed the dog',
-	'Walk the kids',
-	'Water the trees'
-];
+var todos = [];
 
 todos.forEach(function (todo, index) {
   Todo.find({ 'name': todo }, function(err, todos) {
